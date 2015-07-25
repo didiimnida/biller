@@ -1,0 +1,23 @@
+<h4><%=@account.name%></h4>
+
+<h4>Account Entries</h4>
+
+<table>
+  <%@account.account_entries.each do |entry| %>
+  <tr>
+    <td><%=entry.inspect%></td>
+  </tr>
+  <%end%>
+</table>
+
+<% if @account.is_a?(Employee)%>
+<h4>Time Entries</h4>
+
+<table>
+  <%@account.account_entries.each do |entry| %>
+  <tr>
+    <td><%=entry.inspect%></td>
+  </tr>
+  <%end%>
+</table>
+<%end%>

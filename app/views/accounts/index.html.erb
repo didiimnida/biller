@@ -1,0 +1,15 @@
+<table>
+
+  <tr>
+    <td>Name:</td>
+    <td>Type:</td>
+  </tr>
+
+  <% @accounts.each do|account| %>
+  <tr>
+    <td><%=account.name%></td>
+    <td><%=account.type%></td>
+  </tr>
+  <%end%>
+
+</table>

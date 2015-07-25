@@ -9,3 +9,4 @@
 Account.create(name: "Bob's Emporium", email: "bob@example.com", type: "Customer")
 Account.create(name: "Diana", email: "diana@example.com", type: "Employee")
 AccountEntry.create(time: 1.5, employee_id: 2, customer_id: 1, account_id: 1)
+Project.create(:customer_id => 1, :name => "Death Star")
